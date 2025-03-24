@@ -10,6 +10,10 @@ Aplikasi manajemen tugas dengan sistem autentikasi dan antarmuka pengguna modern
 - ✅ Toko Online(Add to Cart, detail, delete)
 - ✅ Responsive Design
 
+## user login
+
+email: 'admin@gmail.com', password: 'admin'
+
 ## Teknologi
 
 - Next.js 14
