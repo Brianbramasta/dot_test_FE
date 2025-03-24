@@ -1,0 +1,46 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.inputSection {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.taskLists {
+  display: grid;
+  gap: 2rem;
+}
+
+.taskGroup {
+  background: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.taskItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  background: white;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+}
+
+.completed {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .inputSection {
+    flex-direction: column;
+  }
+}
