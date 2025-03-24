@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Task Management App
 
-## Getting Started
+Aplikasi manajemen tugas dengan sistem autentikasi dan antarmuka pengguna modern dibangun menggunakan Next.js.
 
-First, run the development server:
+## Fitur Utama
+
+- ✅ Sistem Autentikasi (Login/Register)
+- ✅ Manajemen Tugas CRUD
+- ✅ Pemisahan Tugas Aktif/Selesai
+- ✅ Toko Online(Add to Cart, detail, delete)
+- ✅ Responsive Design
+
+## Teknologi
+
+- Next.js 14
+- React 19
+- TypeScript
+- CSS Modules
+
+## Instalasi
+
+1. Clone repositori
+
+```bash
+git clone [repo-url]
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Jalankan development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Struktur Proyek
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+/src
+├── app
+│   ├── (auth) - Halaman login/register
+│   ├── task_management - Fitur manajemen tugas
+│   └── layout.tsx - Layout utama
+├── components
+│   ├── CustomButton - Komponen button reusable
+│   └── InputField - Komponen input field
+└── contexts - Auth context provider
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts Tersedia
 
-## Learn More
+- `npm run dev` - Development mode
+- `npm run build` - Build produksi
+- `npm start` - Jalankan build produksi
 
-To learn more about Next.js, take a look at the following resources:
+## Kontribusi
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Dibuka untuk kontribusi dengan membuat issue/pull request.
