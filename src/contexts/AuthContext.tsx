@@ -16,7 +16,7 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType>({} as AuthContextType);
 
 const mockUsers = [
-  { email: 'user@example.com', password: 'password123' },
+  { email: 'admin@gmail.com', password: 'admin' },
 ];
 
 export function AuthProvider({ children }: { children: ReactNode }) {
