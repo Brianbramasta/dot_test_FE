@@ -5,15 +5,18 @@ interface CustomButtonProps {
   children: React.ReactNode;
   onClick: () => void;
   variant?: 'primary' | 'secondary';
+  style?: React.CSSProperties;
 }
 
 export const CustomButton: React.FC<CustomButtonProps> = ({ 
   children, 
   onClick, 
-  variant = 'primary' 
+  variant = 'primary' ,
+  style={}
 }) => (
   <button 
     className={`${styles.button} ${styles[variant]}`}
+    style={style}
     onClick={onClick}
   >
     {children}
