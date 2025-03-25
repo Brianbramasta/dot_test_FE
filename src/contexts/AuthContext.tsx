@@ -27,8 +27,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const storedUser = localStorage.getItem('user');
     if (storedUser) {
       setUser(JSON.parse(storedUser));
+    } else {
+      router.push('/login');
     }
-  }, []);
+  }, [router]);
 
   const login = async (email: string, password: string) => {
     const foundUser = mockUsers.find(u => u.email === email && u.password === password);
